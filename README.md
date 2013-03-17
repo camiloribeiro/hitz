@@ -34,11 +34,14 @@ To monitore use:
 
     http://localhost:3000/
   
+To clear the database using request use: 
+
+    http://localhost:3000/clear/
+
 What's next?
 ========
 
 The clear buttons is not working. In the future I want that button to clear the database. 
-I also need a service to do that same task using jmeter. 
 
 Have fun
 

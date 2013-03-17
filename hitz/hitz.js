@@ -1,4 +1,8 @@
 
+  Meteor.Router.add('/clear/', 'GET', function() { 
+    Loadserver.remove({});
+  });
+
   Meteor.Router.add('/server/:id', 'GET', function(id) { 
     Loadserver.insert({name: this.params.id});
   });
