@@ -1,10 +1,7 @@
-function getUrlVars() {
-  var vars = {};
-  var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
-    vars[key] = value;
+
+  Meteor.Router.add('/server/:id', 'GET', function(id) { 
+    Loadserver.insert({name: this.params.id});
   });
-  return vars;
-}
 
 Loadserver = new Meteor.Collection("loadserver");
 if (Meteor.isClient) {
@@ -22,7 +19,7 @@ if (Meteor.isClient) {
 
   Template.hello.events({
     'click input' : function () {
-      Loadserver.insert({name: getUrlVars()['param']});
+//      Loadserver.insert({name: getUrlVars()['param']});
     }
   });
 
