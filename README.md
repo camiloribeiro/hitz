@@ -7,7 +7,9 @@ Running
 =======
 
 Install meteor:
+
     $ curl https://install.meteor.com | /bin/sh
+    $ git clone git@github.com:camiloribeiro/hitz.git
     $ cd hitz
     $ meteor
 
