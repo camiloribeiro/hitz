@@ -21,8 +21,12 @@ Amazing:
     $ cd hitz
     $ mrt
 
-Open: 
+To request use: 
 
-    http://localhost:3000/?param=Server01
+    http://localhost:3000/server/<id>  i.e. "/server/Server01"
+
+To monitore use: 
+
+    http://localhost:3000/
 
 Have fun
